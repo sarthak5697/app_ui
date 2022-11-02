@@ -13,11 +13,9 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    // ignore: avoid_unnecessary_containers
 
     return Scaffold(
       body: Container(
-        // ignore: avoid_unnecessary_containers
         child: Container(
           margin: const EdgeInsets.only(
             top: 35,
@@ -33,18 +31,22 @@ class _MainPageState extends State<MainPage> {
               Row(
                 children: [
                   Container(
+                    
                     decoration: BoxDecoration(
-                      image: ,
+                      image: const DecorationImage(
+                        fit:BoxFit.fill,
+                        image: AssetImage('currentUser.jpg')
+                        ),
                   borderRadius: BorderRadius.circular(50),
-                  color: Color.fromARGB(255, 185, 185, 185),
+                  color: const Color.fromARGB(255, 185, 185, 185),
                 ),
                     height: 60,
                     width: 60,
                     
                   ),
-                  Text('   Hello , Piyush  ',
+                  const Text('   Hello , Piyush  ',
                   ),
-                  Icon(
+                  const Icon(
                     Icons.waving_hand,
                     color: Colors.yellow,
                   ),
@@ -64,7 +66,7 @@ class _MainPageState extends State<MainPage> {
                 height: 30,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  color: Color.fromARGB(255, 185, 185, 185),
+                  color: const Color.fromARGB(255, 185, 185, 185),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,

@@ -32,7 +32,6 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
-  velocity_x: ^3.4.0
 
 dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -48,6 +47,9 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.
 flutter:
+ assets:
+      -images/currentUser.jpg
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
